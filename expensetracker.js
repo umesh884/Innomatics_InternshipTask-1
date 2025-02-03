@@ -24,8 +24,8 @@ function addIncome(){
     else if (expense){
         nameCell.textContent = select;
         dateCell.textContent = date1;
-        amountCell.textContent = expense;
-        
+        amountCell.textContent = -expense;
+        type.textContent = "Expense";
     }
     
   
