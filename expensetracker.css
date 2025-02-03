@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+    border:solid 1px #dddddd;
+    width: 80%;
+    table-layout: auto;
+
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+}
+button{
+    background-color: orange;
+    color:white;
+    height:40px;
+    width:100px;
+    border-radius:20px;
+    border:none;
+    cursor:pointer;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+p{
+    text-align: center;
+    font-size:20px;
+}
