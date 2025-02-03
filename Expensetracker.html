@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="expensetracker.css">
+    </head>
+    <body>
+        <div>
+            <header>
+                <nav>
+                   <h1>Budget tracker app</h1> 
+                </nav>
+            </header>
+            <section>
+                
+                <p>This expense tracker is used to store and calculate the total expenses and
+                income occured.</p>
+            </section>
+            <div>
+               
+                <form class="sub">
+                    
+                    <label for="in-num">Income</label>
+                    <input type="number" value="" id="in-num" name="num1" placeholder="Enter Income..."><br><br>
+                    <label for="ex-num">Expense</label>
+                    <input type="number" value="" id="ex-num" name="num2" placeholder="Enter Expense..."><br><br>
+                    
+                    
+                    Income/Expense Category 
+                    <select id="select" name="expense-type" required>
+                        <option value="">---Select an option---</option>
+                        <option value="Salary">Salary</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Food">Food</option>
+                        <option value="power bill">power bill</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Gadgets">Gadgets</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Entertainment">Entertainment</option>
+                    </select><br><br>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date1"><br><br>
+                    <button onclick="addIncome()"class="submit" type="button">Submit</button><br><br>
+                    
+                </form>
+                
+                <table id="table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Type (Income/Expense)</th>
+                    </tr>
+                    <tbody>
+                        
+                       
+                    </tbody>
+                </table>
+            </div>
+            <!--<footer>
+                Version 1.0.0
+            </footer>-->
+        </div>
+        <script src="expensetracker.js"></script>
+    </body>
+</html>
